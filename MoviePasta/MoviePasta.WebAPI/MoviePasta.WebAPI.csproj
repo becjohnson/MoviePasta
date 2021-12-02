@@ -314,6 +314,20 @@
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MoviePasta.Data\MoviePasta.Data.csproj">
+      <Project>{05e20f70-d419-4dd4-8268-b56b82407ae3}</Project>
+      <Name>MoviePasta.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MoviePasta.Models\MoviePasta.Models.csproj">
+      <Project>{d9088eec-fa17-4766-82a2-cc03ca2e6016}</Project>
+      <Name>MoviePasta.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MoviePasta.Service\MoviePasta.Service.csproj">
+      <Project>{d3012ae8-bf75-45f2-944d-c5a535cf4100}</Project>
+      <Name>MoviePasta.Service</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
