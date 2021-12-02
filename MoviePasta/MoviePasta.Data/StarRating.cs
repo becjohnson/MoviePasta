@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace MoviePasta.Data
         public virtual Movie Movie { get; set; }
         [ForeignKey(nameof(TvId))]
         public int TvId { get; set; }
-        public virtual Tv Tv { get; set; }
+        public virtual TV Tv { get; set; }
         [Required]
         public double NumberStars { get; set; }
         [Required]

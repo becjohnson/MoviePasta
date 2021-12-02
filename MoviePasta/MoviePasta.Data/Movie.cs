@@ -11,7 +11,7 @@ namespace MoviePasta.Data
 {
     public enum MaturityRating { G, PG, NC_17, R, MA, TVY,TV_Y7, TV_G, TV_PG, TV_14, TV_MA, }
     public enum Category { Action, Horror, SciFi, Fantasy, Drama, Mystery, Romance, Thriller, Western, Animation, Documentary, RomCom, GameShow}
-    public class Movie : Tv
+    public class Movie
     {
         [Key]
         public int MovieId { get; set; }
