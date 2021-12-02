@@ -12,18 +12,13 @@ namespace MoviePasta.Data
     {
         [Key]
         public int TvId { get; set; }
-
         [Required]
         public string Title { get; set; }
-
         [Required]
         public MaturityRating MaturityRating { get; set; }
-
         [Required]
         public Category Category { get; set; }
-
         public double AverageStarRating { get; set; }
         public string Description { get; set; }
-
     }
 }
