@@ -12,11 +12,15 @@ namespace MoviePasta.Data
     {
         [Key]
         public int CommentId { get; set; }
-        [ForeignKey(nameof(StarRating))]
-        public int Star { get; set; }
+        [ForeignKey(nameof(RatingId))]
+        public int RatingId { get; set; }
         [Required]
+        public Guid UserId { get; set; }
+        [Required]
+        [Display(Name="Comment")]
         public string Text { get; set; }
         [Required]
+        [Display(Name="Created")]
         public DateTimeOffset Created { get; set; }
     }
 }
