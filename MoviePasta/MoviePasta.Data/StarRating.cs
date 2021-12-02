@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MoviePasta.Data
 {
-    public class StarRating
+    public class StarRating : TV
     {
         [Key]
         public int RatingId { get; set; }
@@ -15,8 +15,7 @@ namespace MoviePasta.Data
         [Required]
         public double NumberStars { get; set; }
         public double AverageRating { get; set; }
-        public string MovieName { get; set; }
-        public string MovieDescription { get; set; }
+       
         [Required]
         [MaxLength(4000)]
         public string Comment { get; set; }
