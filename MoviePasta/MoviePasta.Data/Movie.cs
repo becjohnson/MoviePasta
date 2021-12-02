@@ -15,21 +15,15 @@ namespace MoviePasta.Data
     {
         [Key]
         public int MovieId { get; set; }
-
         [Required]
         public string Title { get; set; }
-
         [Required]
         [JsonConverter(typeof(StringEnumConverter))]
         public MaturityRating MaturityRating { get; set; }
-
         [Required]
         public Category Catetegory { get; set; }
         public double AverageStarRating { get; set; }
-
         [MaxLength(8000)]
         public string Description { get; set; }
-
-
     }
 }
