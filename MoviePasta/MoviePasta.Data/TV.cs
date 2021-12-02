@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 
 namespace MoviePasta.Data
 {
-
     public class TV : Movie
     {
         [Key]
