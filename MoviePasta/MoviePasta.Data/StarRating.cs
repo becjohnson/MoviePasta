@@ -13,8 +13,10 @@ namespace MoviePasta.Data
         public int RatingId { get; set; }
         [ForeignKey(nameof(MovieId)]
         public int MovieId { get; set; }
+        public virtual Movie Movie { get; set; }
         [ForeignKey(nameof(TvId)]
         public int TvId { get; set; }
+        public virtual Tv Tv { get; set; }
         [Required]
         public double NumberStars { get; set; }
         [Required]
