@@ -19,6 +19,7 @@ namespace MoviePasta.Data
         [Required]
         public Category Category { get; set; }
         public double AverageStarRating { get; set; }
+        [Required]
         public string Description { get; set; }
     }
 }
